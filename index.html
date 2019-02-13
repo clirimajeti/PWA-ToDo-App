@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body ng-app="ToDo">
+    <h1>ToDo App with Angular</h1>
+    <div ng-controller="todo_Controller" class="container">
+        <form class="add" name="frm" ng-submit="addTodo()">
+            <input type="text" name="newtodo" ng-model="newTodo" required>
+            <button ng-disabled="frm.$invalid">Go</button>
+        </form>
+    <div class="tasks">
+        <ul>
+            <li ng-repeat="todo in todos">
+                <input type="checkbox" ng-model="todo.done">
+                <span ng-class="{'done':todo.done}">{{todo.title}}</span>
+            </li>
+        </ul>
+    </div>
+        <button ng-click="clearCompleted()" style="width:100%;">Clear Completed</button>
+    </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script> 
+   <script src="./app.js"></script>
+</body>
+</html>
