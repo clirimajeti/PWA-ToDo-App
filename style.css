@@ -1,35 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-body{
-    font-family: 'Open Sans', sans-serif;
-    background-size: cover;
-    background-image: url(./img/sky_day.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 90vh;
-    text-align:center;
-}
-.container{
-    margin:10px auto;width:50%;
-}
-ul{ 
-    padding-left:0!important; 
-    list-style-type: none;
-}
-.done{text-decoration: line-through;color:#ccc}
-.add{
-    padding: 10px;
-    background-color:crimson;
-}
-.add input{
-    width:50%;
-    margin:5px;
-}
-.tasks{
-    overflow-y: scroll;
-    font-size: 1.5em;
-    text-align: left;
-    padding-left:10%;
-    height: 50vh;
-    background-color:rgba(221, 67, 67, 0.7);
-    padding-top: 30px;
-}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body{font-family:'Open Sans',sans-serif;background-size:cover;background-image:url(img/sky_day.jpg);background-position:center;background-repeat:no-repeat;height:90vh;text-align:center}
+.container{margin:10px auto;width:50%}
+ul{padding-left:0!important;list-style-type:none}
+.tasks_text{margin:10px auto;font-size:16px;color:#333;padding:10px;border-radius:5px;background-color:rgba(255,255,255,.2)}
+.task_add{height:25px;padding-left:10px;padding-right:10px;background-color:rgba(255,255,255,.5);border-radius:5px;transition:all .3s ease}
+.done{text-decoration:line-through;color:rgba(255,255,255,.5);transition:all .5s ease}
+.add{padding:10px;background-color:rgba(255,255,255,.3);box-shadow:0 -10px 50px -10px rgba(255,255,255,.2) inset}
+.add input{font-weight: 600;height:22px;width:50%;margin:5px;background-color:rgba(255,255,255,.2);border-radius:5px;transition:all .3s ease}
+.add input:focus{outline:0;background-color:rgba(255,255,255,.5)}
+.clear{font-weight: 600;padding:15px;width:100%;background-color:rgba(255,255,255,.5);border-bottom-left-radius:5px;border-bottom-right-radius:5px;outline:0;border:none}
+.tasks{overflow-y:scroll;font-size:1.5em;text-align:left;height:50vh;border-top:.5px solid rgba(255,255,255,.8);background-color:rgba(255,255,255,.3);box-shadow:0 -10px 50px -10px rgba(255,255,255,.2) inset}

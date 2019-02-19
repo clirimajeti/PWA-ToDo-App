@@ -8,21 +8,20 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body ng-app="ToDo">
-    <h1>ToDo App with Angular</h1>
     <div ng-controller="todo_Controller" class="container">
         <form class="add" name="frm" ng-submit="addTodo()">
             <input type="text" name="newtodo" ng-model="newTodo" required>
-            <button ng-disabled="frm.$invalid">Go</button>
+            <button ng-disabled="frm.$invalid" class="task_add">Go</button>
         </form>
     <div class="tasks">
         <ul>
-            <li ng-repeat="todo in todos">
+            <li ng-repeat="todo in todos" class="tasks_text">
                 <input type="checkbox" ng-model="todo.done">
                 <span ng-class="{'done':todo.done}">{{todo.title}}</span>
             </li>
         </ul>
     </div>
-        <button ng-click="clearCompleted()" style="width:100%;">Clear Completed</button>
+        <button ng-click="clearCompleted()" class="clear">Clear Completed</button>
     </div>
    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script> 
    <script src="./app.js"></script>
