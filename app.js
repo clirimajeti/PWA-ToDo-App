@@ -2,7 +2,7 @@
     app.controller('todo_Controller',['$scope', function($scope){
         $scope.todos = [
             {
-            'title':'build a todo app',
+            'title':'Hello stranger',
             'done':false
             }
         ];
