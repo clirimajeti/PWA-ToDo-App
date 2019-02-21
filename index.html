@@ -23,14 +23,14 @@
         </ul>
     </div>
         <form class="add" name="frm" ng-submit="addTodo()">
-            <div class="form-row">
-                <div class="col-md-7">
+            <div class="form-row" >
+                <div class="col-md-7 add_div">
                     <input type="text" name="newtodo" ng-model="newTodo" placeholder="Write task" maxlength="80" required>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 add_div">
                         <input type="date" ng-model="todo_date" required>
                     </div>
-                <div class="col-md-2">
+                <div class="col-md-2 add_div" >
                         <button ng-disabled="frm.$invalid" class="task_add">Add Task</button>
                     </div>          
             </div>
