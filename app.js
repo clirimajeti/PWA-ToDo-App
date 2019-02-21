@@ -3,12 +3,14 @@
         $scope.todos = [
             {
             'title':'Hello stranger',
+            'date': null,
             'done':false
             }
         ];
         $scope.addTodo = function(){
-            $scope.todos.push({'title':$scope.newTodo,'done':false});
+            $scope.todos.push({'title':$scope.newTodo,'date':$scope.todo_date,'done':false});
             $scope.newTodo = '';
+            $scope.todo_date = null;
         };
         $scope.clearCompleted = function(){
             $scope.todos = $scope.todos.filter((item)=>{
