@@ -5,7 +5,7 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "Scope": "/",
-  "start_url": "https://clirimajeti.github.io/ToDo-App/build/index.html",
+  "start_url": "https://clirimajeti.github.io/PWA-ToDo-App/build/index.html",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
