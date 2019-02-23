@@ -44,7 +44,7 @@ workbox.precaching.precacheAndRoute([
     "revision": "3406f08f9a75d9702241b09b32602454"
   },
   {
-    "url": "img/sky_day.jpg",
+    "url": "imgages/sky_day.jpg",
     "revision": "2da3c76a74f0be1d07c130c21d6c31b7"
   },
   {

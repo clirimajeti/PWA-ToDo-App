@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 body,html{margin:0;padding:0}
-body{font-family:'Open Sans',sans-serif;background-size:cover;background-image:url(../img/sky_day.jpg);background-position:center;background-repeat:no-repeat;height:85vh;text-align:center;box-sizing:border-box}
+body{font-family:'Open Sans',sans-serif;background-size:cover;background-image:url(../images/sky_day.jpg);background-position:center;background-repeat:no-repeat;height:85vh;text-align:center;box-sizing:border-box}
 ul{padding-left:0!important;list-style-type:none}
 .container{margin-top:15vh;}
 .tasks_text{overflow-x:hidden;margin:10px auto;display:flex;justify-content:flex-start;font-size:1em;color:#333;padding:10px;border-radius:5px;background-color:rgba(255,255,255,.2)}

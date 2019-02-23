@@ -21,7 +21,7 @@
     <div class="tasks">
         <input type="text" ng-model="search" placeholder="Search task..." class="search">
         <ul>
-            <li ng-repeat="todo in todos | filter: search" class="tasks_text row">
+            <li ng-repeat="todo in todos | filter: search | orderBy:'date'" class="tasks_text row">
                 <div class="col-md-10">
                     <input type="checkbox" ng-model="todo.done">
                     <span ng-class="{'done':todo.done}">{{todo.title}}</span>
