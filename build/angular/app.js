@@ -3,7 +3,7 @@
         $scope.todos = [
             {
             'title':'Hello stranger',
-            'date': null,
+            'date': new Date(),
             'done':false
             }
         ];
